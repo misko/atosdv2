@@ -90,7 +90,7 @@ void move() {
 			back_down--;
 			if (back_down==0) {
 				printf("jam\n");
-				exit(1);
+				return;
 			}
 		} else {
 			back_down=3;

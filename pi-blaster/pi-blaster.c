@@ -507,7 +507,7 @@ go_go_go(void)
 			continue;
 		//fprintf(stderr, "[%d]||%s||", n, lineptr);
 		n = sscanf(lineptr, "%d=%f%c", &servo, &value, &nl);
-		fprintf(stderr, "[%d]x//%s//", n, lineptr);
+		//fprintf(stderr, "[%d]x//%s//", n, lineptr);
 		if (n !=3 || nl != '\n') {
 			fprintf(stderr, "Bad input: %s", lineptr);
 		} else if (servo < 0 || servo >= NUM_CHANNELS) {
